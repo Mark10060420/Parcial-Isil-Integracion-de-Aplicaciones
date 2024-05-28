@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Necesario para el diseño web responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Realice sus Devoluciones</title>
+
+    <!-- Enlaza el archivo HTML con la hoja de estilos externa -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="stylesheet" href="css/nosotros.css">
+    <link rel="stylesheet" href="css/contactanos.css">
+
+    <!-- Enlaza con la librería de iconos Font-awesome ubicada en el 
+    repositorio de cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Enlazar con el programa javascript para el botón scroll-arriba -->
+    <script src="js/boton-arriba.js"></script>
+
+    <!-- Enlazar el HTML con el Favicon -->
+    <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
+
+    <!-- librerías JQUERY para el slider BXSLIDER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Area de cabecera -->
+    <header id="cabecera" class="cabecera-sticky">
+        <div class="contenedor">    
+            <div class="fila">
+                <figure id="logo">
+                    <a title="Inicio" href="/">
+                        <img src="imagenes/logo.png" class="img-ajustar">
+                    </a>
+                </figure> <!-- logo -->
+                <nav id="menu-principal" class="alinear-vertical">
+                    <!-- Lista de viñetas -->
+                    <ul class="menu-barra">
+                        <li><a title="Inicio" href="/">Inicio</a></li>
+                        <li><a title="Catalogo de videojuegos" href="/catalogo">Catalogo</a></li>
+                        <li><a title="Contáctate con nosotros" href="/contactanos">Contáctanos</a></li>
+                        <li><a title="Sobre Nosotros" href="/nosotros">Nosotros</a></li>
+                        <li><a title="¿Problemas con su compra?" href="/devoluciones">Devoluciones</a></li>
+                    </ul>
+                </nav> <!-- menu-principal -->
+            </div> <!-- fila -->
+        </div> <!-- contenedor -->
+    </header> <!-- cabecera -->
+
+
+    <section id="investigaciones-cabecera">
+        <div class="contenedor">
+            <h1>Devoluciones</h1>
+        </div> <!-- contenedor -->
+    </section> <!-- investigaciones-cabecera -->
+
+    <!-- Area del formulario -->
+    <section id="contacto-formulario" class="espaciado">
+        <div class="contenedor">
+            <div class="fila">
+                <div class="columna">
+                    <!-- Objeto formulario -->
+                    <form id="formulario-objeto" action="/datosform" method="post">
+                        <h3>Registro de Devolucion</h3>
+                        <div class="campo-contenedor">
+                            <input class="campo-entrada" type="text" required placeholder="Introduce tu nombre" name="nombre">
+                        </div>
+                        <div class="campo-contenedor">
+                            <input class="campo-entrada" type="text" required placeholder="Introduce tus apellidos" name="apellido">
+                        </div>
+                        <div class="campo-contenedor">
+                            <input class="campo-entrada" type="text" required placeholder="Introduce tu teléfono" name="telefono">
+                        </div>
+                        <div class="campo-contenedor">
+                            <input class="campo-entrada" type="email" required placeholder="Introduce tu correo electrónico" name="correo">
+                        </div>
+                        <div class="campo-contenedor">
+                            <textarea class="campo-entrada-descripcion" 
+                            required placeholder="Introduce una descripcion del Motivo de Devolucion" 
+                            name="descripcion" 
+                            rows="5"></textarea>
+                        </div>
+                        
+                        <input class="boton-enviar" type="submit" value="Enviar">
+                      
+                    </form> <!-- formulario-objeto -->
+                </div>  <!-- columna -->
+                <div class="columna">
+                    <img src="imagenes/contacto-chica.png" class="img-ajustar">
+                </div> <!-- columna -->
+            </div> <!-- fila -->
+        </div> <!-- contenedor -->
+    </section> <!-- contacto-formulario -->      
+
+    <!-- Area del pie de página -->
+    <footer id="pie">
+        <div class="contenedor">
+            <p>
+                &copy; 2024 - Todos los juegos que puedas deseae<br>
+                <!-- Redes sociales -->
+                <ul class="menu-barra">
+                    <li>
+                        <a title="Facebook" target="_blank" href="https://www.facebook.com/">
+                            <i class="fa-brands fa-facebook-square fa-fw"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a title="Instagram" target="_blank" href="https://www.instagram.com/">
+                            <i class="fa-brands fa-instagram-square fa-fw"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a title="Youtube" target="_blank" href="https://www.youtube.com/">
+                            <i class="fa-brands fa-youtube fa-fw"></i>
+                        </a>
+                    </li>
+                </ul> <!-- menu-barra -->
+            </p>
+        </div> <!-- contenedor -->
+    </footer>  <!-- pie -->
+    <!-- Botón para realizar un scroll rápido hacia arriba -->
+    <a href="#" id="scroll-arriba">
+        <i class="fa-solid fa-angle-up fa-fw"></i>
+    </a>
+</body>
+</html>    

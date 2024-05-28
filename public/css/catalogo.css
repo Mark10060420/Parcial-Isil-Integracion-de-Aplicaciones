@@ -1,0 +1,69 @@
+
+/* Enlazar con una fuente externa de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;900&display=swap');
+
+
+/* Declarar una fuente externa copiada en el proyecto */
+@font-face {
+    font-family:"goodtimes-regular" ;
+    src: url("../fuentes/good_times/good\ times\ rg.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "strasua-regular";
+    src: url("../fuentes/strasua/strasua.ttf") format("truetype");
+}
+
+html {
+    /* Permite un desplazamiento lento del scroll en la página */
+    scroll-behavior: smooth;
+}
+
+/* https://color.adobe.com/es/color%20theme_1-color-theme-19918761 */
+:root {
+    /* Declarar variables con los colores de la paleta */
+    --color1:#3079D9;
+    --color2:#2A558C;
+    --color3:#182940;
+    --color4:#9FADBF;
+    --color5:#ddd2d4;
+    --color-blanco: #ffffff;
+    --color-negro:#000000;
+    --color-gris:#454545;
+}
+
+/* Elimina el margen externo y espaciado interno predeterminado */
+* {
+    margin: 0;
+    padding: 0;   
+}
+
+#investigaciones-cabecera {
+    background-color: var(--color-gris);
+    color: var(--color-blanco);
+    padding: 5px 0px;
+}
+
+video {
+    /* Quita el margen que aparece debajo del video */
+    display: block;
+}
+
+#investigaciones-video {
+    position: relative;
+}
+
+#investigaciones-video-descripcion {
+    position: absolute;
+    width: 40%;
+    text-align: center;
+
+    /* Coordenadas */
+    bottom: 100px;
+    left: 30%;
+}
+
+#investigaciones-slider .bx-wrapper {
+    border: none;
+    padding: 5%;
+}

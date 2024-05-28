@@ -1,0 +1,70 @@
+/* Enlazar con una fuente externa de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;900&display=swap');
+
+
+/* Declarar una fuente externa copiada en el proyecto */
+@font-face {
+    font-family:"goodtimes-regular" ;
+    src: url("../fuentes/good_times/good\ times\ rg.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "strasua-regular";
+    src: url("../fuentes/strasua/strasua.ttf") format("truetype");
+}
+
+html {
+    /* Permite un desplazamiento lento del scroll en la página */
+    scroll-behavior: smooth;
+}
+
+/* https://color.adobe.com/es/color%20theme_1-color-theme-19918761 */
+:root {
+    /* Declarar variables con los colores de la paleta */
+    --color1:#3079D9;
+    --color2:#2A558C;
+    --color3:#182940;
+    --color4:#9FADBF;
+    --color5:#D0DFF2;
+    --color-blanco: #ffffff;
+    --color-negro:#000000;
+    --color-gris:#454545;
+}
+
+/* Elimina el margen externo y espaciado interno predeterminado */
+* {
+    margin: 0;
+    padding: 0;   
+}
+
+#trasladate {
+    background-color: var(--color5);
+    color: var(--color3);
+}
+
+#trasladate ul {
+    margin-left: 40px;
+    list-style-type: square;  /* disc, circle, square */
+}
+
+#trasladate ol {
+    margin-left: 40px;
+    list-style-type: upper-roman;
+}
+
+#trasladate-cabecera {
+    background-color: var(--color1);
+    padding: 45px 0px;
+}
+
+#trasladate-cabecera h1 {
+    color: var(--color-blanco);
+}
+
+
+.video-responsive {
+    aspect-ratio: 16 / 9;  /* Relacion-apecto del video: 16 / 9, 4 / 3, 21 / 9  */
+    width: 100%;
+    height: auto;
+    background-color: var(--color-negro);
+}
